@@ -1,10 +1,8 @@
-<!-- index.html -->
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My First Docker Web App</title>
-</head>
-<body>
-  <h1>Hello from inside a Docker container!</h1>
-</body>
-</html>
+# Use a lightweight web server image
+FROM nginx:alpine
+
+# Copy HTML files to the server's public folder
+COPY    .    /usr/share/nginx/html
+
+# Expose the web server port
+EXPOSE 80
