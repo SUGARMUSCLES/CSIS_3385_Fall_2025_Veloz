@@ -1,5 +1,7 @@
-﻿[
+@'
+[
   {"id":1,"username":"alice","email":"alice@example.com","age":28,"password":"pw1"},
   {"id":2,"username":"bob","email":"bob@example.com","age":32,"password":"pw2"},
   {"id":3,"username":"carol","email":"carol@example.com","age":25,"password":"pw3"}
 ]
+'@ | Out-File -FilePath .\seed.json -Encoding utf8
